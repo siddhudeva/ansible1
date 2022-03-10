@@ -1,0 +1,7 @@
+- name: install python for ansible
+  yum: python3
+  state: present
+
+- name: install anisble
+  yum: ansible
+  state: present
