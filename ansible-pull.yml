@@ -1,5 +1,13 @@
 - name: installing ansible in node machine
   hosts: any  
   become: yes
+  tags: ansible1
   roles: 
-    - ansible
+    - ansible1
+
+  - name: installing ansible in node machine
+  hosts: any  
+  become: yes
+  tags: ansible2
+  roles: 
+    - ansible2
